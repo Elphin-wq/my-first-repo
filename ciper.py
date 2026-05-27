@@ -12,3 +12,4 @@ print(ciphertext)
 cipher=AES.new(key,AES.MODE_EAX,nonce=nonce)
 plaintext=cipher.decrypt_and_verify(ciphertext,tag)
 print(plaintext.decode()) # should print secret message
+print("hi")
